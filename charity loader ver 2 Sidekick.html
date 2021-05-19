@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Loader - Version 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .screen {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+
+        .loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-100px, -100px);
+        }
+
+        #purpy {
+            animation: purp 4s ease-in-out infinite forwards;
+        }
+
+        #orange {
+            animation: org 4s ease-in-out infinite forwards;
+        }
+
+        #cyan {
+            animation: cn 4s ease-in-out infinite forwards;
+        }
+
+        @keyframes purp {
+
+            0%,
+            20% {
+                opacity: 0;
+            }
+
+            25% {
+                opacity: 1;
+            }
+
+            95% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes org {
+
+            0%,
+            40% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+
+            95% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes cn {
+
+            0%,
+            60% {
+                opacity: 0;
+            }
+
+            75% {
+                opacity: 1;
+            }
+
+            95% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="screen">
+        <svg class="loader" width="200" min-height="0" viewBox="0 0 300 317" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="logo-charity" clip-path="url(#clip0)">
+                <path id="cyan"
+                    d="M21.1133 79.1649C28.0333 67.1728 36.5005 56.1429 46.2972 46.3591C120.365 -27.7369 243.537 -10.2027 295.252 79.1216C297.574 83.1326 299.084 87.5617 299.694 92.1559C300.304 96.7502 300.003 101.42 298.809 105.898C297.614 110.376 295.55 114.575 292.733 118.255C289.915 121.935 286.401 125.024 282.39 127.346C278.379 129.668 273.95 131.177 269.356 131.787C264.762 132.397 260.092 132.097 255.614 130.902C251.136 129.708 246.937 127.643 243.257 124.826C239.577 122.009 236.488 118.495 234.166 114.484C205.029 64.1436 136.7 55.9591 96.3157 96.356C90.9014 101.749 86.2246 107.835 82.4071 114.456L21.1133 79.1649Z"
+                    fill="url(#paint0_linear)" />
+                <path id="orange"
+                    d="M79.2236 295.518C5.29461 253.199 -23.3232 156.5 21.169 79.1927C23.4807 75.1744 26.5613 71.6507 30.2349 68.823C33.9084 65.9952 38.1029 63.9187 42.5789 62.7119C47.055 61.5052 51.7249 61.1919 56.322 61.79C60.9191 62.388 65.3534 63.8856 69.3717 66.1974C73.39 68.5091 76.9136 71.5897 79.7414 75.2633C82.5692 78.9368 84.6457 83.1313 85.8525 87.6073C87.0592 92.0834 87.3725 96.7532 86.7744 101.35C86.1764 105.947 84.6787 110.382 82.367 114.4C57.35 157.848 73.9909 210.833 114.419 234.113L79.2236 295.518Z"
+                    fill="url(#paint1_linear)" />
+                <path id="purpy"
+                    d="M234.119 202.136C238.786 194.025 246.483 188.101 255.517 185.665C259.991 184.46 264.658 184.147 269.252 184.744C273.847 185.342 278.278 186.839 282.294 189.15C286.31 191.46 289.832 194.539 292.658 198.211C295.484 201.882 297.559 206.074 298.765 210.548C299.97 215.021 300.283 219.688 299.686 224.283C299.088 228.877 297.591 233.309 295.28 237.325C283.697 257.492 267.802 274.85 248.73 288.159C200.513 321.5 134.812 327.347 79.171 295.327C75.1551 293.015 71.6339 289.935 68.8084 286.262C65.9829 282.59 63.9084 278.397 62.7034 273.922C61.4984 269.448 61.1864 264.78 61.7854 260.185C62.3844 255.59 63.8825 251.158 66.1943 247.143C68.506 243.127 71.5861 239.605 75.2587 236.78C78.9313 233.954 83.1244 231.88 87.5988 230.675C92.0731 229.47 96.7409 229.158 101.336 229.757C105.931 230.356 110.363 231.854 114.378 234.166C157.412 258.939 210.719 242.761 234.119 202.145V202.136Z"
+                    fill="url(#paint2_linear)" />
+            </g>
+            <defs>
+                <linearGradient id="paint0_linear" x1="54.0582" y1="161.553" x2="206.855" y2="55.9158"
+                    gradientUnits="userSpaceOnUse">
+                    <stop offset="0.09" stop-color="#0D3FC6" />
+                    <stop offset="0.15" stop-color="#124FCD" />
+                    <stop offset="0.35" stop-color="#207BDF" />
+                    <stop offset="0.53" stop-color="#2C9EED" />
+                    <stop offset="0.71" stop-color="#34B7F7" />
+                    <stop offset="0.87" stop-color="#38C6FD" />
+                    <stop offset="1" stop-color="#3ACBFF" />
+                </linearGradient>
+                <linearGradient id="paint1_linear" x1="106.964" y1="268.897" x2="20.1892" y2="95.3484"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#E00000" />
+                    <stop offset="0.17" stop-color="#E7350C" />
+                    <stop offset="0.39" stop-color="#EE7019" />
+                    <stop offset="0.59" stop-color="#F49F23" />
+                    <stop offset="0.76" stop-color="#F8C02B" />
+                    <stop offset="0.9" stop-color="#FBD52F" />
+                    <stop offset="1" stop-color="#FCDC31" />
+                </linearGradient>
+                <linearGradient id="paint2_linear" x1="339.692" y1="210.877" x2="134.286" y2="273.688"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#AA13B3" />
+                    <stop offset="0.51" stop-color="#D339D1" />
+                    <stop offset="1" stop-color="#FF60F0" />
+                </linearGradient>
+                <clipPath id="clip0">
+                    <rect width="300" height="316.496" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    </div>
+</body>
+
+</html>
